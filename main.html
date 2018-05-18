@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <style>
+        body {
+            background: #d4d4d4
+        }
+    </style>
+    <script src="build/Canvas.js"></script>
+    <script src="build/Loop.js"></script>
+</head>
+
+<body>
+    <script>
+        let can = new Canvas()
+        let mlp = new Loop()
+        let sqr = new Square(can) 
+
+        can.appendTo( document.body )
+        can.add(sqr)
+        can.draw()
+    </script>
+</body>
+
+</html>
